@@ -45,8 +45,3 @@ def fake_data_gen():
         exit()
 
 fake_data_gen()
-# question = input("Generate a Fake Address? Y or N?").lower()
-# if question == "y":
-#     fake_data_gen()
-# else:
-#     exit()
