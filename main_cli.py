@@ -29,10 +29,29 @@
 from faker import Faker 
 import pyperclip
 
-fake = Faker()
-name = fake.name()
-address = fake.address()
+def fake_data_gen():
+    fake = Faker()
+    name = fake.name()
+    address = fake.address()
 
-name_address = (f"{name}\n{address}")
-pyperclip.copy(name_address)
-print(name_address)
+    name_address = (f"{name}\n{address}")
+    pyperclip.copy(name_address)
+    print(name_address)
+    
+    again = input("Generate a Fake Address? Y or N?").lower()
+    if again == "y":
+        fake_data_gen()
+    else:
+        exit()
+    
+    # again = input(question)
+    # if again == "y":
+    #     fake_data_gen()
+    # else:
+    #     exit()
+
+question = input("Generate a Fake Address? Y or N?").lower()
+if question == "y":
+    fake_data_gen()
+else:
+    exit()
