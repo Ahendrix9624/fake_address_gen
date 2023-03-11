@@ -1,30 +1,12 @@
-#!/usr/bin/env python3
-#
-#  [Program]
-#
-#  Fake Name/Address Generator CLI Version
-#
-#  [Author]
-#
-#  Drew, https://github.com/Ahendrix9624/
-#
-#  [License]
-#
-#  This program is free software; you can redistribute it and/or modify
-#  it under the terms of the GNU General Public License as published by
-#  the Free Software Foundation; either version 3 of the License, or
-#  any later version.
-#
-#  This program is distributed in the hope that it will be useful,
-#  but WITHOUT ANY WARRANTY; without even the implied warranty of
-#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#  GNU General Public License for more details.
-#
-#  You should have received a copy of the GNU General Public License
-#  along with this program; if not, write to the Free Software
-#  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
-#
-#  See 'LICENSE' for more information.
+"""
+USAGE - The code uses the Python Faker library to generate a fake name and address. 
+        It then copies the name and address to the clipboard using the Pyperclip library 
+        and prints it to the console. It prompts the user to generate another fake address 
+        or exit the program. If the user chooses to generate another fake address, 
+        the function is called recursively.
+        
+AUTHOR - https://github.com/Ahendrix9624/
+"""
 
 from faker import Faker 
 import pyperclip
